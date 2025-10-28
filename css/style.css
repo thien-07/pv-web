@@ -1,0 +1,369 @@
+/* =================== SỬA PHẦN BANNER & NỘI DUNG =================== */
+
+/* Đảm bảo header không che nội dung */
+
+header, .anhtu {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Giới thiệu thành viên */
+.contenttv {
+  font-size: 32px;
+  font-weight: bold;
+  background-color: #007bff;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  margin: 10px 10px ;
+}
+.content1 {
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid black ;
+  border-radius: 10px;
+}
+
+.content1 h3 {
+  font-style: italic;
+}
+
+.content1 p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Banner */
+.banner {
+  background-color: #c9f4f9;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.banner img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* =================== RESET + CƠ BẢN =================== */
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  margin: auto;
+}
+
+.backgroup {
+  background-color: whitesmoke;
+}
+
+.container {
+  display: flex;
+  padding: 5px 10px;
+}
+
+/* =================== HEADER =================== */
+.anhtu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 800;
+  background-color: white;
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-brand:hover {
+  background-color: #d6d6d6;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.nav-link:hover {
+  background-color: #d6d6d6;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+.name {
+  text-align: center;
+}
+
+/* =================== MENU =================== */
+#menu2 {
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+  height: 500px;
+  width: auto;
+  background-image: url(https://lh3.googleusercontent.com/ourQbUh5x_qOtLqkqURngvERqVSP9BdSf84gDkdvomg11oZ0QZKBh_uwPeBEOwRkwzxoB9CcH-AwLoN6HZammrdXii52xXxFow=w1920-rw);
+  background-size: cover;
+  object-fit: cover;
+}
+
+#menu2 ul {
+  background: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 200px;
+  padding: 0;
+}
+
+#menu2 li {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 1em;
+  margin-bottom: 1px;
+}
+
+#menu2 li a {
+  text-decoration: none;
+  color: #0C0A0A;
+  font-weight: bold;
+  display: block;
+}
+
+#menu2 li h1 {
+  color: rgb(20, 53, 195);
+  font-weight: bold;
+  font-size: 21px;
+  text-align: center;
+}
+
+#menu2 li:hover {
+  background: #c4c3c3;
+  border-radius: 8px;
+}
+
+#menu2 ul li {
+  position: relative;
+  text-align: left;
+}
+
+#menu2 .sub-menu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  display: none;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+#menu2 li:hover .sub-menu {
+  display: block;
+}
+
+/* =================== NỘI DUNG =================== */
+#content,
+.content2 {
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  justify-items: center;
+}
+
+#content {
+  background: url(https://lh3.googleusercontent.com/YsnUSV-cp1QsV45kHixsKnXz6KH4fZVL3_VydiZS-xAUIWZsjnKStrfIZVzWS7m3-6kwTfIgugbETtsfIsFQVprA4lkb7dI=w1232);
+  background-size: cover;
+}
+
+.content2 {
+  background: url(https://lh3.googleusercontent.com/4SKGr28Mu5AYV1d3TBjXTQfOwWcsfMC6wedwGQSqMmWtHa_kqNlSOZuMiTd_chSMJmWfEu_ktJzsP4vuuy5O5uh6898jMnD9=w1232);
+  background-size: cover;
+}
+
+.content {
+  padding-top: 120px; /* tránh bị header che */
+  
+}
+
+/* =================== CARD =================== */
+.card {
+  margin: 10px;
+  float: right;
+  position: relative;
+}
+
+.card-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.card .btn {
+  border: 1px solid #c4c3c3;
+  background-color: #c4c3c3;
+  position: relative;
+  top: -25px;
+}
+
+/* =================== GIÁ =================== */
+.gia {
+  float: left;
+  font-weight: bold;
+  font-size: 21px;
+  color: rgb(20, 53, 195);
+  padding-right: 5px;
+}
+
+.gia-giam {
+  position: relative;
+  top: -20px;
+  color: #444;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: line-through;
+  float: left;
+}
+
+.gia-giam2 {
+  position: relative;
+  top: -20px;
+  color: blue;
+  font-weight: bold;
+  float: left;
+}
+
+/* =================== KHUNG NỀN =================== */
+#khungnen1,
+#khungnen2 {
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: 92% 8%;
+  background-size: 100%;
+  border-bottom: 1px solid white;
+}
+
+#khungnen1 {
+  background: url(https://lh3.googleusercontent.com/YsnUSV-cp1QsV45kHixsKnXz6KH4fZVL3_VydiZS-xAUIWZsjnKStrfIZVzWS7m3-6kwTfIgugbETtsfIsFQVprA4lkb7dI=w1232);
+}
+
+#khungnen2 {
+  background: url(https://lh3.googleusercontent.com/4SKGr28Mu5AYV1d3TBjXTQfOwWcsfMC6wedwGQSqMmWtHa_kqNlSOZuMiTd_chSMJmWfEu_ktJzsP4vuuy5O5uh6898jMnD9=w1232);
+}
+
+.css-1ld3dfv {
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+  font-weight: 700;
+}
+
+.tieude2 {
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =================== ICON =================== */
+.bi {
+  font-style: normal;
+  color: #0C0A0A;
+  padding-right: 10px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.bi-person-circle {
+  padding-right: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.bi-telephone-fill {
+  padding-left: 10px;
+  height: 15px;
+}
+
+.bi-cart3 a,
+.bi-person-circle a {
+  text-decoration: none;
+  color: #0C0A0A;
+}
+
+.bi-search {
+  color: black;
+  justify-items: center;
+}
+
+
+/* =================== FOOTER =================== */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  background-color: rgb(121, 216, 226);
+  font-size: 16px;
+  padding: 20px;
+}
+
+.footer ul li {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.footer a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: blue;
+}
+
+.img-thanhtoan img {
+  height: 50px;
+  width: 100%;
+}
+
+/* =================== FOOTER CỐ ĐỊNH =================== */
+.footer-css {
+  background-color: black;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 1em;
+}
+
+/* =================== KHÁC =================== */
+.dropdown-menu li {
+  padding: 5px 30px;
+  text-align: left;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Sửa lỗi tên class tiếng Việt */
+.tu h1 {
+  font-size: 30px;
+}
+
+.tu {
+  padding: 1rem;
+}
